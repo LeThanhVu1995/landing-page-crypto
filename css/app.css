@@ -297,6 +297,9 @@ button {
 }
 
 @media only screen and (max-width: 400px) {
+  .aboutus-name {
+    font-size: 32px !important;
+  }
   .aboutus-brand {
     grid-template-columns: none !important;
   }
@@ -378,6 +381,9 @@ button {
   .business {
     margin-bottom: 64px !important;
   }
+  .business-name {
+    font-size: 32px !important;
+  }
   .business-description {
     font-size: 16px !important;
     text-align: center !important;
@@ -398,6 +404,9 @@ button {
   .business-list-item-odd-right {
     order: 1 !important;
   }
+  .business-list-item-odd-right-title {
+    font-size: 24px !important;
+  }
   .business-list-item-even {
     display: grid;
     grid-gap: 32px 0;
@@ -407,6 +416,9 @@ button {
     display: flex;
     justify-content: flex-start !important;
     align-items: flex-start !important;
+  }
+  .business-list-item-even-right-title {
+    font-size: 24px !important;
   }
 }
 .business-name {
@@ -494,6 +506,7 @@ button {
     position: relative !important;
     text-align: left !important;
     margin-bottom: 32px !important;
+    font-size: 32px !important;
   }
   .feature .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     position: relative;
@@ -656,6 +669,15 @@ button {
     grid-gap: 32px 0px !important;
     margin-bottom: 64px !important;
   }
+  .token-chart-title {
+    font-size: 32px !important;
+  }
+  .token-chart-name {
+    font-size: 18px !important;
+  }
+  .token-chart-price {
+    font-size: 16px !important;
+  }
   .token-list {
     margin-top: 0px !important;
   }
@@ -813,6 +835,7 @@ button {
 @media only screen and (max-width: 400px) {
   .timeline-title {
     margin-bottom: 64px !important;
+    font-size: 32px !important;
   }
 
   .timeline ol li:nth-child(odd) .content-title {
@@ -1016,6 +1039,9 @@ li.active-li .circle-shadow {
 }
 
 @media only screen and (max-width: 400px) {
+  .team-title {
+    font-size: 32px !important;
+  }
   .team-description-list .slick-prev {
     left: 5px !important;
   }
@@ -1159,6 +1185,12 @@ li.active-li .circle-shadow {
 }
 
 @media only screen and (max-width: 400px) {
+  .partners-title {
+    font-size: 32px !important;
+  }
+  .partners-brand-title {
+    font-size: 24px !important;
+  }
   .partners-brand-item-logo {
     width: 100px !important;
     height: 100px !important;
@@ -1168,6 +1200,9 @@ li.active-li .circle-shadow {
   }
   .partners-cryptos {
     gap: 0 55px !important;
+  }
+  .partners-cryptos-item-title {
+    font-size: 24px !important;
   }
   .partners-cryptos-item-content {
     width: 100px !important;
