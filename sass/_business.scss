@@ -1,0 +1,122 @@
+@media only screen and (max-width: $mobile) {
+  .business {
+    margin-bottom: 64px !important;
+
+    &-description {
+      font-size: 16px !important;
+      text-align: center !important;
+      font-style: normal !important;
+    }
+    &-list {
+      gap: 32px 0 !important;
+      &-item-odd {
+        display: grid;
+        grid-template-columns: none !important;
+        grid-gap: 32px 0;
+        &-left {
+          padding: 0 !important;
+          order: 2 !important;
+        }
+        &-right {
+          order: 1 !important;
+        }
+      }
+      &-item-even {
+        display: grid;
+        grid-gap: 32px 0;
+        grid-template-columns: none !important;
+        &-left {
+          display: flex;
+          justify-content: flex-start !important;
+          align-items: flex-start !important;
+        }
+        &-right {
+        }
+      }
+    }
+  }
+}
+
+.business {
+  &-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: left;
+    letter-spacing: -1px;
+    color: #fdd116;
+    margin-bottom: 32px;
+  }
+  &-description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    text-align: left;
+    letter-spacing: -1px;
+    color: #f4f6f8;
+    margin-bottom: 64px;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 128px 0;
+    &-item-odd {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      &-left {
+        padding: 31.01px 0px 12.82px 111px;
+      }
+      &-right {
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 125%;
+          letter-spacing: -1px;
+          color: #f4f6f8;
+          margin-bottom: 32px;
+        }
+        &-description {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 130%;
+          text-align: justify;
+          color: #dfe5ea;
+        }
+      }
+    }
+    &-item-even {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      &-left {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-right {
+        order: 1;
+        &-title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 125%;
+          letter-spacing: -1px;
+          color: #f4f6f8;
+          margin-bottom: 32px;
+        }
+        &-description {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 130%;
+          text-align: justify;
+          color: #dfe5ea;
+        }
+      }
+    }
+  }
+}
