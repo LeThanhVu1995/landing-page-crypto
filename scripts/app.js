@@ -1,7 +1,7 @@
 $(".team-gallery").slick({
   dots: false,
   slidesToShow: 1,
-  infinite: true,
+  infinite: false,
   centerMode: true,
   variableWidth: true,
   arrows: false,
@@ -31,28 +31,27 @@ $(".team-description-list").slick({
 });
 $(document).ready(function () {
   $("#btn_menu_open").on("click", () => {
-    $(".mb-navigation").show();
+    $(".mb-navigation").css("left", "0px");
+    $(".mb-navigation").css("opacity", "1");
   });
 
   $("#btn_menu_close").on("click", () => {
-    $(".mb-navigation").hide();
+    $(".mb-navigation").css("left", "-400px");
+    $(".mb-navigation").css("opacity", "0");
   });
 
-  const scrollTimeline = document.querySelector(".timeline-scroll");
+  scrollHorizontal(".timeline-scroll");
+  scrollHorizontal(".partners-brand-item");
+  countdown();
+});
 
-  scrollTimeline.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollTimeline.scrollLeft += evt.deltaY;
-  });
-
-  const scrollBrand = document.querySelector(".partners-brand-item");
+function scrollHorizontal(classname) {
+  const scrollBrand = document.querySelector(classname);
   scrollBrand.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollBrand.scrollLeft += evt.deltaY;
   });
-
-  countdown();
-});
+}
 
 function countdown() {
   var countDownDate = new Date("Aug 5, 2022 15:37:25").getTime();

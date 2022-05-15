@@ -20,7 +20,6 @@
       color: #f4f6f8;
       padding: 8px !important;
       &-text {
-        font-family: Open Sans;
         font-size: 12px;
         font-weight: 400;
         line-height: calc(11 / 16.8);
@@ -57,11 +56,26 @@
       letter-spacing: -1px;
       cursor: pointer;
       transition: all 0.5s;
-      &:hover {
-        color: #fdd116;
-        border-bottom: 1px solid #fdd116;
-      }
-      &-text:hover {
+      .header-menu-text {
+        &:link {
+          color: #fffceb;
+        }
+        &:link {
+          color: #fffceb;
+        }
+
+        &:visited {
+          color: #fffceb;
+        }
+
+        &:hover {
+          color: #fdd116;
+          border-bottom: 1px solid #fdd116;
+        }
+
+        &:active {
+          color: #fffceb;
+        }
       }
     }
   }

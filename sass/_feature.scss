@@ -83,7 +83,10 @@
       line-height: 130%;
       color: #92a6b9;
       display: block;
-      min-height: 140px;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -151,6 +154,10 @@
       letter-spacing: -0.5px;
       color: #f4f6f8;
       margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     .feature-list-item-text {
       font-style: normal;
@@ -174,7 +181,6 @@
     pointer-events: none;
   }
   &-name {
-    font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
