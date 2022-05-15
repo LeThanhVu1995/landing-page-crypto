@@ -7,6 +7,11 @@
     display: flex !important;
     justify-content: space-between;
     align-items: center;
+    .header_mobile-menu-btn {
+      width: 62.25px;
+      display: flex;
+      justify-content: flex-end;
+    }
     .header_mobile-language {
       border: 1px solid #f4f6f8;
       border-radius: 8px;
@@ -51,6 +56,13 @@
       font-size: 22px;
       letter-spacing: -1px;
       cursor: pointer;
+      transition: all 0.5s;
+      &:hover {
+        color: #fdd116;
+        border-bottom: 1px solid #fdd116;
+      }
+      &-text:hover {
+      }
     }
   }
   &-language {
@@ -62,8 +74,8 @@
     color: #f4f6f8;
     padding: 4px 8px;
     margin-top: 5px;
+    cursor: pointer;
     &-text {
-      font-family: Open Sans;
       font-size: 12px;
       font-weight: 400;
       line-height: calc(11 / 16.8);

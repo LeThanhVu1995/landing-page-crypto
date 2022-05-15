@@ -1,12 +1,19 @@
 @media only screen and (max-width: $mobile) {
   .partners {
+    &-title {
+      font-size: 32px !important;
+    }
     &-brand {
+      &-title {
+        font-size: 24px !important;
+      }
       &-item {
         &-logo {
           width: 100px !important;
           height: 100px !important;
           img {
-            width: 50%;
+            max-width: 70px !important;
+            max-height: 60px !important;
           }
         }
       }
@@ -14,11 +21,15 @@
     &-cryptos {
       gap: 0 55px !important;
       &-item {
+        &-title {
+          font-size: 24px !important;
+        }
         &-content {
           width: 100px !important;
           height: 100px !important;
           img {
-            width: 50%;
+            max-width: 70px !important;
+            max-height: 60px !important;
           }
         }
       }
@@ -48,19 +59,32 @@
       margin-bottom: 32px;
     }
     &-item {
-      display: inline-flex;
-      gap: 0 32px;
+      display: block;
       margin-bottom: 32px;
       white-space: nowrap;
-      overflow: auto;
+      overflow-x: auto;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       &-logo {
         width: 250px;
         height: 250px;
         background: #f4f6f8;
         border-radius: 10px;
-        display: flex;
+        margin-right: 32px;
+        display: inline-block;
         align-items: center;
         justify-content: center;
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 150px;
+          max-height: 110px;
+        }
       }
     }
   }
@@ -86,6 +110,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        img {
+          max-width: 150px;
+          max-height: 110px;
+        }
       }
     }
   }

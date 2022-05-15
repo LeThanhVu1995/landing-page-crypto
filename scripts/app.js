@@ -6,8 +6,16 @@ $(".team-gallery").slick({
   variableWidth: true,
   arrows: false,
   initialSlide: 3,
-  centerPadding: "200px",
   asNavFor: ".team-description-list",
+  responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 $(".team-description-list").slick({
@@ -18,8 +26,8 @@ $(".team-description-list").slick({
   initialSlide: 3,
   focusOnSelect: true,
   asNavFor: ".team-gallery",
-  prevArrow: `<button type='button' class='slick-prev pull-left'><img src="./images/right.svg "/></button>`,
-  nextArrow: `<button type='button' class='slick-next pull-right'><img src="./images/left.svg "/></button>`,
+  prevArrow: `<button type='button' class='slick-prev pull-left'><span class="icon-chevron-left"></span></button>`,
+  nextArrow: `<button type='button' class='slick-next pull-right'><span class="icon-chevron-right"></button>`,
 });
 $(document).ready(function () {
   $("#btn_menu_open").on("click", () => {
@@ -36,7 +44,43 @@ $(document).ready(function () {
     evt.preventDefault();
     scrollTimeline.scrollLeft += evt.deltaY;
   });
+
+  const scrollBrand = document.querySelector(".partners-brand-item");
+  scrollBrand.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollBrand.scrollLeft += evt.deltaY;
+  });
+
+  countdown();
 });
+
+function countdown() {
+  var countDownDate = new Date("Aug 5, 2022 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("advertisement-days").innerHTML = days;
+    document.getElementById("advertisement-hours").innerHTML = hours;
+    document.getElementById("advertisement-minutes").innerHTML = minutes;
+    document.getElementById("advertisement-seconds").innerHTML = seconds;
+
+    // If the count down is finished, write some text
+  }, 1000);
+}
 
 const swiper = new Swiper(".feature-list", {
   grabCursor: false,

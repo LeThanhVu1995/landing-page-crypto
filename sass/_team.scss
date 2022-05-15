@@ -1,13 +1,22 @@
 @media only screen and (max-width: $mobile) {
   .team {
+    &-title {
+      font-size: 32px !important;
+    }
     &-description-list {
       .slick-prev {
+        span {
+          font-size: 24px !important;
+        }
         left: 5px !important;
         img {
           width: 50% !important;
         }
       }
       .slick-next {
+        span {
+          font-size: 24px !important;
+        }
         right: 5px !important;
         img {
           width: 50% !important;
@@ -43,6 +52,12 @@
   }
   &-description-list {
     .slick-prev {
+      span {
+        &::before {
+          color: #fdd116;
+        }
+        font-size: 40px;
+      }
       background-color: transparent;
       position: absolute;
       display: block;
@@ -52,12 +67,19 @@
       z-index: 999;
     }
     .slick-next {
+      span {
+        &::before {
+          color: #fdd116;
+        }
+        font-size: 40px;
+      }
       background-color: transparent;
       position: absolute;
       display: block;
       top: 30%;
       right: 200px;
       transform: translate(-50%, -50%);
+      z-index: 999;
     }
     .slick-dots {
       list-style-type: none;
@@ -73,6 +95,7 @@
         border-radius: 100rem;
       }
       .slick-active {
+        transition: all 0.5s;
         button {
           background: #fdd116 !important;
         }
@@ -95,6 +118,20 @@
         align-items: center;
         gap: 0 32px;
         margin-bottom: 64px;
+        .fb-social {
+          cursor: pointer;
+          font-size: 32px;
+          &::before {
+            color: #fdd116;
+          }
+        }
+        .ins-social {
+          cursor: pointer;
+          font-size: 32px;
+          &::before {
+            color: #fdd116;
+          }
+        }
       }
     }
   }
@@ -104,6 +141,7 @@
 
     .slick-track {
       display: flex;
+      transition: all 1s;
       align-items: center;
       .slick-active,
       .slick-center {

@@ -3,6 +3,17 @@
     grid-template-columns: none !important;
     grid-gap: 32px 0px !important;
     margin-bottom: 64px !important;
+    &-chart {
+      &-title {
+        font-size: 32px !important;
+      }
+      &-name {
+        font-size: 18px !important;
+      }
+      &-price {
+        font-size: 16px !important;
+      }
+    }
     &-list {
       margin-top: 0px !important;
       &-item {
@@ -12,10 +23,7 @@
             flex-direction: column;
             gap: 4px 0;
             &-description {
-              text-overflow: ellipsis;
-              width: 200px;
-              overflow: hidden;
-              white-space: nowrap;
+              width: 200px !important;
             }
           }
         }
@@ -46,7 +54,8 @@
     &-item {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
       padding: 0px;
       border: 1px solid rgba(253, 209, 22, 0.2);
       backdrop-filter: blur(300px);
@@ -125,6 +134,11 @@
     }
   }
   &-chart {
+    img {
+      width: 100%;
+      max-width: 672px;
+      max-height: 493px;
+    }
     &-title {
       font-style: normal;
       font-weight: 600;
