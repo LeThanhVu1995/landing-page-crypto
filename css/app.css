@@ -665,10 +665,7 @@ button {
     gap: 4px 0;
   }
   .token-list-item-content-left-description {
-    text-overflow: ellipsis;
-    width: 200px;
-    overflow: hidden;
-    white-space: nowrap;
+    width: 200px !important;
   }
 }
 .token {
