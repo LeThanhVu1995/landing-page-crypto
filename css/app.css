@@ -111,10 +111,12 @@ button {
   display: flex;
   align-items: center;
 }
-.header-logo {
-  margin-right: 413.29px;
+.header-image-logo {
+  width: 672px;
+  max-width: 672px;
 }
 .header-menu {
+  flex-grow: 1;
   list-style-type: none;
   display: flex;
   gap: 0 32px;
@@ -129,6 +131,7 @@ button {
   letter-spacing: -1px;
   cursor: pointer;
   transition: all 0.5s;
+  white-space: nowrap;
 }
 .header-menu-item .header-menu-text:link {
   color: #fffceb;
@@ -197,6 +200,7 @@ button {
   }
   .advertisement-image img {
     width: 100% !important;
+    height: 100% !important;
   }
   .advertisement-countdown {
     gap: 4px 0px;
@@ -1432,6 +1436,12 @@ li.active-li .circle-shadow {
   margin-bottom: 28px;
   cursor: pointer;
 }
+.footer-grid-column-social span:hover {
+  font-size: 22px;
+}
+.footer-grid-column-social span:hover::before {
+  color: #fdd116;
+}
 .footer-grid-column-social span {
   font-size: 22px;
 }
@@ -1555,7 +1565,7 @@ li.active-li .circle-shadow {
   }
 }
 .main-section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @font-face {

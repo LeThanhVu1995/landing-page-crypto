@@ -37,12 +37,17 @@
 }
 
 .header {
+  &-image-logo {
+    width: 672px;
+    max-width: 672px;
+  }
   display: flex;
   align-items: center;
   &-logo {
-    margin-right: 413.29px;
+    // margin-right: 413.29px;
   }
   &-menu {
+    flex-grow: 1;
     list-style-type: none;
     display: flex;
     gap: 0 32px;
@@ -56,6 +61,7 @@
       letter-spacing: -1px;
       cursor: pointer;
       transition: all 0.5s;
+      white-space: nowrap;
       .header-menu-text {
         &:link {
           color: #fffceb;

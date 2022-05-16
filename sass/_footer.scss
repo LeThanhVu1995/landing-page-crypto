@@ -22,6 +22,12 @@
     grid-gap: 0px 177.33px;
     &-column {
       &-social {
+        span:hover {
+          &::before {
+            color: #fdd116;
+          }
+          font-size: 22px;
+        }
         span {
           font-size: 22px;
         }

@@ -107,7 +107,7 @@ const swiper = new Swiper(".feature-list", {
     },
     400: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 32,
     },
   },
 });
