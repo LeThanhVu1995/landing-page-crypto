@@ -895,6 +895,11 @@ button {
   color: #f4f6f8;
   margin-bottom: 35.15px;
 }
+.token-chart-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .timeline-title {
   font-style: normal;
@@ -1490,7 +1495,7 @@ li.active-li .circle-shadow {
   .wrapper .mb-navigation {
     position: absolute;
     top: 0;
-    left: -400px;
+    left: -1000px;
     width: 100%;
     background-color: #2f3d4a;
     height: 100vh;

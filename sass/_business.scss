@@ -79,6 +79,8 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       &-left {
         padding: 31.01px 0px 12.82px 111px;
+        display: flex;
+        align-items: center;
         img {
           max-width: 263px;
           max-height: 226px;

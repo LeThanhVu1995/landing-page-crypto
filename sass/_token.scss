@@ -166,5 +166,10 @@
       color: #f4f6f8;
       margin-bottom: 35.15px;
     }
+    &-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

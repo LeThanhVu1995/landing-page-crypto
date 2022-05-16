@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 
   $("#btn_menu_close").on("click", () => {
-    $(".mb-navigation").css("left", "-400px");
+    $(".mb-navigation").css("left", "-1000px");
     $(".mb-navigation").css("opacity", "0");
   });
 
