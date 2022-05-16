@@ -483,6 +483,8 @@ button {
 }
 .business-list-item-odd-left {
   padding: 31.01px 0px 12.82px 111px;
+  display: flex;
+  align-items: center;
 }
 .business-list-item-odd-left img {
   max-width: 263px;
