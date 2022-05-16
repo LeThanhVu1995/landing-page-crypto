@@ -80,12 +80,17 @@ button {
     justify-content: space-between;
     align-items: center;
   }
+  .header_mobile .header_mobile-logo {
+    cursor: pointer;
+  }
   .header_mobile .header_mobile-menu-btn {
     width: 62.25px;
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
   }
   .header_mobile .header_mobile-language {
+    cursor: pointer;
     border: 1px solid #f4f6f8;
     border-radius: 8px;
     display: flex;
@@ -114,6 +119,7 @@ button {
 .header-image-logo {
   width: 672px;
   max-width: 672px;
+  cursor: pointer;
 }
 .header-menu {
   flex-grow: 1;
