@@ -73,9 +73,15 @@ function countdown() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("advertisement-days").innerHTML = days;
-    document.getElementById("advertisement-hours").innerHTML = hours;
-    document.getElementById("advertisement-minutes").innerHTML = minutes;
-    document.getElementById("advertisement-seconds").innerHTML = seconds;
+    document.getElementById("advertisement-hours").innerHTML = hours
+      .toString()
+      .padStart(2, 0);
+    document.getElementById("advertisement-minutes").innerHTML = minutes
+      .toString()
+      .padStart(2, 0);
+    document.getElementById("advertisement-seconds").innerHTML = seconds
+      .toString()
+      .padStart(2, 0);
 
     // If the count down is finished, write some text
   }, 1000);
